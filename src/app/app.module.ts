@@ -14,7 +14,7 @@ import {AngularFireModule} from "angularfire2"
 import {AngularFireDatabaseModule} from "angularfire2/database"
 
 const config ={
-  apiKey: "AIzaSyBr76waUxQde9lA-2LC6ua1OMe0Sn3Lpyc",
+  apiKey: "ADD FIREBASE API KEY HERE",
   authDomain: "gitsearch-ff7bc.firebaseapp.com",
   databaseURL: "https://gitsearch-ff7bc.firebaseio.com",
   projectId: "gitsearch-ff7bc",
