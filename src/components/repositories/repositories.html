@@ -1,0 +1,16 @@
+<div>
+    <ion-card>
+        <ion-card-header style="text-decoration: none;">
+            <a href="{{repository.html_url}}" style="text-decoration: none;">
+                <ion-card-title>{{repository.name}}</ion-card-title>
+            </a>
+        </ion-card-header>
+        <ion-card-content>
+            {{repository.description}}
+
+            <hr>
+            <p>Main Language: {{ repository.language}}</p>
+            <p>Forked: {{repository.fork}}</p>
+        </ion-card-content>
+    </ion-card>
+</div>

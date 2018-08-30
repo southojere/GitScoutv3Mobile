@@ -1,0 +1,7 @@
+{
+  "name": "blank GitSearch",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

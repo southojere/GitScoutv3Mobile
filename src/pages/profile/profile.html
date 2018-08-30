@@ -1,0 +1,50 @@
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-title>GitScout</ion-title>
+    <ion-buttons right>
+      <button ion-button (click)="searchForUser()">
+        <ion-icon name="search"></ion-icon>
+        <!--For searching specific user-->
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div>
+
+    <ion-item>
+      <ion-label floating>Region</ion-label>
+      <ion-input [(ngModel)]="location"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Sort By Highest</ion-label>
+      <ion-select [(ngModel)]="sortByMethod">
+        <ion-option value="gists">Gists</ion-option>
+        <ion-option value="repositories">Repositories</ion-option>
+        <ion-option value="followers">Followers</ion-option>
+        <ion-option value="contributions">Contributions</ion-option>
+      </ion-select>
+    </ion-item>
+    <!-- How many results is wanted -->
+    <ion-item>
+      <ion-label>Number of results</ion-label>
+      <ion-select [(ngModel)]="resultsWanted">
+        <ion-option value="1">1</ion-option>
+        <ion-option value="5">5</ion-option>
+        <ion-option value="10">10</ion-option>
+        <ion-option value="20">20</ion-option>
+        <ion-option value="30">30</ion-option>
+        <ion-option value="50">50</ion-option>
+        <ion-option value="80">80</ion-option>
+        <ion-option value="100">100</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <button ion-button full (click)="getUsersInformation()">
+      <ion-icon name="search"></ion-icon>
+    </button>
+
+  </div>
+</ion-content>

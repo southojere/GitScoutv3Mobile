@@ -1,0 +1,16 @@
+<ion-item *ngIf="user">
+
+    <ion-avatar item-left>
+        <img src="{{user?.avatar_url}}">
+    </ion-avatar>
+    <a href="{{user?.html_url}}" style="text-decoration: none; color: black; ">
+        <h2>{{user?.name}}</h2>
+    </a>
+    <h3>{{user?.company}}</h3>
+    <p>{{user?.location}}</p>
+    <p text-wrap>{{user?.bio}}</p>
+    <a href="{{user?.blog}}">
+        <p>{{user?.blog}}</p>
+    </a>
+    <p>Hirable: {{user?.hireable == true}}</p>
+</ion-item>

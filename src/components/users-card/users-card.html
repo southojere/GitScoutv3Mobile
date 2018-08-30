@@ -1,0 +1,16 @@
+<button ion-item *ngIf="userCard" (click)="displayPopUpCard()">
+    <ion-avatar item-left>
+      <img src="{{userCard?.avatar_url}}">
+    </ion-avatar>
+    <h2>
+      {{userCard?.name}}
+    </h2>
+    <!-- <button ion-button color="light" round (click)="openUsersProfile(userCard?.login)" class="profile">
+      <ion-icon name="person"></ion-icon>
+    </button> -->
+    <h3>{{userCard?.company}}</h3>
+  
+    <p>{{userCard?.location}}</p>
+    <p text-wrap>{{userCard?.bio}}</p>
+    <!-- <p>Followers: {{userCard?.followers}}</p> -->
+  </button>

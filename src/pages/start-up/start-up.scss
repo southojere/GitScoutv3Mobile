@@ -1,0 +1,22 @@
+page-start-up {
+}
+
+
+#intro{
+    padding-top: 40vh;
+    text-align: center;
+    animation: text-focus-in 1s ease-in both;
+}
+
+@keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
